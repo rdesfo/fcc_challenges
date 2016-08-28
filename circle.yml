@@ -5,7 +5,7 @@ machine:
 
 dependencies:
   override:
-      - npm install doctest
+      - npm install -g doctest
 
 test:
   post:
