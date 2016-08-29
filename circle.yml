@@ -9,4 +9,4 @@ dependencies:
 
 test:
   post:
-      - doctest *.js
+      - doctest src/*.js
