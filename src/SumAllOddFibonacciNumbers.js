@@ -1,5 +1,5 @@
-//  typeof sumFibs(1)
-// 'Number'
+// > typeof sumFibs(1)
+// 'number'
 // > sumFibs(1000)
 // 1785
 // > sumFibs(4000000)
@@ -17,6 +17,9 @@ function sumFibs(n) {
 
   while(fibs[fibs.length -1] < n){
     fibs = genFib(fibs);
+  }
+  if (fibs[fibs.length -1] > n){
+    fibs.pop();
   }
   return sum(filterOdds(fibs)); 
 }
