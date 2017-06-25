@@ -1,0 +1,11 @@
+version: "3.1"
+
+services:
+  learnyounode:
+    image: rdesfo/learnyounode
+    user: node
+    command: nodemon --exec "doctest --module commonjs" *.js
+    volumes:
+      - .:/home/node/app:z
+    security_opt: 
+      - label:type:docker_t
