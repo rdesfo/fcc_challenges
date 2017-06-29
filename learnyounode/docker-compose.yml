@@ -4,7 +4,7 @@ services:
   learnyounode:
     image: rdesfo/learnyounode
     user: node
-    command: nodemon --exec "doctest --module commonjs" *.js
+    command: nodemon --exec "doctest" *.js
     volumes:
       - .:/home/node/app:z
     security_opt: 
