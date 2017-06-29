@@ -1,16 +1,16 @@
 
 
-var myArg = process.argv;
+var allArg = process.argv;
+var myArg = allArg.slice(2);
 
 // > getSum([1,2,3])
 // 6
 function getSum(a){
   var sum = 0;
-
-  for (i =2; i < a.length; i++){
+  for (i=0; i < a.length; i++){
     sum = sum + Number(a[i]);
   }
-  console.log(sum)
+  return sum;
 }
 
-getSum(myArg)
+console.log(getSum(myArg));
