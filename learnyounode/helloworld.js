@@ -1,9 +1,9 @@
 
 // > hello()
-// HELLO WORLD
+// "HELLO WORLD"
 
 function hello(){
-  console.log("HELLO WORLD");
+  return "HELLO WORLD";
 }
 
-hello()
+console.log(hello());
